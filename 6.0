@@ -1,0 +1,7 @@
+C:\Users\aahue\AppData\Roaming\npm\ng -> C:\Users\aahue\AppData\Roaming\npm\node_modules\@angular\cli\bin\ng
+
+> @angular/cli@12.0.5 postinstall C:\Users\aahue\AppData\Roaming\npm\node_modules\@angular\cli
+> node ./bin/postinstall/script.js
+
++ @angular/cli@12.0.5
+added 234 packages from 179 contributors in 16.496s
