@@ -21,7 +21,6 @@ function App() {
     let mapped  = toDoList.map(task => {
     return task.id === Number(id) ? { ...task, complete: !task.complete } : { ...task };
     });
-
     setToDoList(mapped);
   }
 
