@@ -22,7 +22,6 @@ function App() {
       {
     return task.id === Number(id) ? { ...task, complete: !task.complete } : { ...task };
     });
-
     setToDoList(mapped);
   }
 
