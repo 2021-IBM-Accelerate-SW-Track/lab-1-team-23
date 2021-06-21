@@ -12,7 +12,7 @@ const ToDoList = ({toDoList, handleToggle, handleFilter}) => {
                     handleFilter={handleFilter}/>
                 )
             })}
-            <Button variant="contained" color="secondary" style={{margin: '20px'}} onClick={handleFilter}>Delete Completed</Button>
+            <Button variant="contained" color="secondary" style={{margin: '20px'}} onClick={ handleFilter }> Delete Completed </Button>
         </div>
     );
 };
