@@ -18,7 +18,8 @@ function App() {
   //If its complete then the text of the todo list will have a strike through. 
   //Once changes are made it sets the new To-Do List to the updated version.
   const handleToggle = (id) => {
-    let mapped  = toDoList.map(task => {
+    let mapped  = toDoList.map(task => 
+      {
     return task.id === Number(id) ? { ...task, complete: !task.complete } : { ...task };
     });
     setToDoList(mapped);
@@ -42,16 +43,16 @@ function App() {
 
   return (
     <div className="App">
+      
     <Header/>
-    
     <ToDoList 
       toDoList = { toDoList } 
       handleToggle = {handleToggle} 
       handleFilter = {handleFilter} />
-    
     <ToDoForm 
       addTask = {addTask} />
     </div>
+    
   );
 }
 
