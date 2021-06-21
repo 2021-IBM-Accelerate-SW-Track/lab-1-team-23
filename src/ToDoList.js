@@ -1,5 +1,6 @@
 import React from 'react';
 import ToDo from './ToDo';
+import Button from '@material-ui/core/Button';
 
 const ToDoList = ({toDoList, handleToggle, handleFilter}) => {
     return (
@@ -11,7 +12,7 @@ const ToDoList = ({toDoList, handleToggle, handleFilter}) => {
                     handleFilter={handleFilter}/>
                 )
             })}
-            <button style={{margin: '20px'}} onClick={handleFilter}>Delete Completed</button>
+            <Button variant="contained" color="secondary" style={{margin: '20px'}} onClick={handleFilter}>Delete Completed</Button>
         </div>
     );
 };

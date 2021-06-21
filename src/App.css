@@ -23,3 +23,8 @@ code {
 .strike {
     text-decoration: line-through;
 }
+
+Button.submit-button{
+    margin-top: 5px;
+    /* padding-top: 20px; */
+}
