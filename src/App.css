@@ -1,10 +1,24 @@
+
 .App {
     text-align: center;
+    display:flexbox;
+    position:relative;
+    margin: auto;
+    overflow:-moz-hidden-unscrollable;
+    min-height: 50px;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 5px;
+    padding:50px;
+    height: 100%;   
+    background-image: linear-gradient(to right, rgb(180, 23, 96) , yellow);
 }
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: Copperplate, fantasy;
+    font-weight: 400;
+    font-size: larger;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -20,11 +34,32 @@ code {
     cursor: pointer;
 }
 
-.strike {
+.strike { /*Line through the tasks to be deleted*/
     text-decoration: line-through;
+    color:rgb(204, 11, 92);
 }
 
-Button.submit-button{
-    margin-top: 5px;
-    /* padding-top: 20px; */
+Button.submit-button{ /*Distance from bottom of page*/
+    margin-bottom: 30%;
 }
+
+header.header-content /*Header CSS*/
+{
+    font-size:xx-large;
+    font-family: Copperplate, fantasy;
+}
+
+ input[type=text], select { /*text box*/
+    width: 30%;
+    height: 20%;
+    text-align: center;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;}
+
+   input.text-box{
+       font-size: large;
+   }

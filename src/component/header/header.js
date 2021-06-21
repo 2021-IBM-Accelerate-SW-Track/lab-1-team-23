@@ -7,7 +7,7 @@ import React from 'react';
 
 const Header = () => {
     return ( 
-        <header>
+        <header className = 'header-content'>
             <h1> To Do List </h1>
         </header>
     )
