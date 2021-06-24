@@ -36,9 +36,19 @@ function App() {
   }
 
   const addTask = (userInput ) => {
-    let copy = [...toDoList];
-    copy = [...copy, { id: toDoList.length + 1, task: userInput, complete: false }];
-    setToDoList(copy);
+    let bool = true;
+    toDoList.forEach(
+      function(element){
+        if (element.task === userInput) {
+          bool = false;
+        }
+       }
+    )
+    if (bool === true) {
+      let copy = [...toDoList];
+      copy = [...copy, { id: toDoList.length + 1, task: userInput, complete: false }];
+      setToDoList(copy);
+    }
   }
 
   return (
